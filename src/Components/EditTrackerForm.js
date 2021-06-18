@@ -25,23 +25,23 @@ function handleSubmit() {
     return (
         <div>
             
-            <form>
-                   <div>
-                      <label>Item</label>
+            <form className="frm">
+                   <div className="info">
+                      <label className="head">Item</label><br></br>
                       <input type= "text" name ="item" value ={state.item} onChange = {handleOnChange} />
-                   </div>
+                   </div><br></br>
 
                    <div>
-                       <label>Date</label>
+                       <label className="head">Date</label>
                        <input type="date" name="date" value={state.date} onChange={handleOnChange} />
-                   </div>
+                   </div><br></br>
 
                    <div>
-                       <label>Amount</label>
+                       <label className="head">Amount</label>
                        <input type="text" name="amount" value={state.amount}  onChange={handleOnChange} />
-                   </div>
+                   </div><br></br>
                    <div>
-                       <label>Category</label>
+                       <label className="head">Category</label>
                        <select name="category" id="cat" value= {state.category}>
                               <option selected>Open this select menu</option>
                                  <option value="Accomodation">Accomodation</option>
@@ -49,7 +49,7 @@ function handleSubmit() {
                                  <option value="Food">Food</option>
                                  <option value="Water">Water</option>
                                  <option value="Transportation">Transportation</option>           
-                     </select>
+                     </select><br></br>
                      <div>
                      <button type="button" className="btn" onClick={handleSubmit}>
                               Save

@@ -1,8 +1,9 @@
 import React, {useState} from 'react'
 import { Modal } from 'react-bootstrap';
 import { connect } from 'react-redux';
-import EditTrackerForm from './EditTrackerForm';
 import { deleteTracker } from '../actions/trackerActions';
+import EditTrackerForm from './EditTrackerForm';
+
 
 
  function Tracker(props) {
@@ -28,15 +29,15 @@ function hideModal() {
                     <button className="updt" onClick= {showModal}> Edit </button>
                     <Modal show ={isModalVisible} onHide= {hideModal} >
                         <Modal.Header clodeButton>
-                            <Modal.Title>Edit</Modal.Title>
+                            <Modal.Title>Edit </Modal.Title>
                         </Modal.Header>
                         <Modal.Body> <EditTrackerForm 
-                         uer={props.user} 
+                         uesr={props.user} 
                          hideModal={hideModal} />
                         </Modal.Body>
                     </Modal>
                     <button className="rvm" onClick= {() =>{
-                        props.deleteUser(props.user.id)
+                        props.deleteTracker(props.user.id)
 
                     }}>Delete</button>
 

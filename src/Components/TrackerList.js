@@ -5,7 +5,7 @@ import Tracker from './Tracker';
 function TrackerList(props) {
     return (
         <div>
-            {props.user.map((user) =>
+            {props.users.map((user) =>
             (<Tracker user ={user}
                 delete={props.delete}
                 editTracker={props.editTracker}
