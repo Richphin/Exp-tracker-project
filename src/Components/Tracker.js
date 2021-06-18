@@ -16,8 +16,7 @@ import EditTrackerForm from './EditTrackerForm';
 function hideModal() {
     setShowModal(false);
 }
-
-    
+ 
     return (
         <div>
             <div className ="details">
@@ -32,7 +31,7 @@ function hideModal() {
                             <Modal.Title>Edit </Modal.Title>
                         </Modal.Header>
                         <Modal.Body> <EditTrackerForm 
-                         uesr={props.user} 
+                         user={props.user} 
                          hideModal={hideModal} />
                         </Modal.Body>
                     </Modal>

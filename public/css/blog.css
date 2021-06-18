@@ -7,7 +7,7 @@ input {
 	padding: 10px 15px;
 	border: 1Px solid black;
 	margin: 8px 0;
-	margin-top: 25px;
+	
 	border-radius: px;
 	
   
@@ -17,8 +17,8 @@ input {
 	text-align: center;
 	padding: 10 15px;
 	border-radius: 15px;
-	height: 65vh;
-	margin-top: 75px;
+	height: 80vh;
+	margin-top: 65px;
 	background-color: black;
 	
 	
@@ -28,7 +28,7 @@ input {
 	text-align: center;
 	font-size: large;
 	font-style: italic;
-	border-radius: 4px;
+	
 	color: blanchedalmond;
   }
   .btn{

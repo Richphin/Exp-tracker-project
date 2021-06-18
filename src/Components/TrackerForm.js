@@ -30,21 +30,22 @@ import addUser from '../actions/trackerActions';
            
                 <form className="frm">
                    <div className="info">
-                      <label className="head">Item</label>
+                      <label className="head">Item</label><br></br>
                       <input type= "text" name ="item" value ={state.item} onChange = {handleOnChange} />
                    </div><br></br>
 
                    <div>
-                       <label className="head">Date</label><bfr></bfr>
+                       <label className="head">Date</label><br></br>
                        <input type="date" name="date" value={state.date} onChange={handleOnChange} />
                    </div><br></br>
 
                    <div>
-                       <label className="head">Amount</label>
+                       <label className="head">Amount</label><br></br>
                        <input type="text" name="amount" value={state.amount}  onChange={handleOnChange} />
                    </div><br></br>
                    <div>
-                       <label className="head">Category</label>
+                       <div>
+                       <label className="head">Category</label><br></br>
                        <select name="category" id="cat" value= {state.category}>
                               <option selected>Open this select menu</option>
                                  <option value="Accomodation">Accomodation</option>
@@ -53,11 +54,14 @@ import addUser from '../actions/trackerActions';
                                  <option value="Water">Water</option>
                                  <option value="Transportation">Transportation</option>          
                      </select><br></br>
+                     </div><br></br>
+                    
                       <div>
                           <button type="button" className="btn" onClick={handleSubmit}>
                               Save
                           </button>
                       </div>
+                     
                        
                    </div>
                 </form>

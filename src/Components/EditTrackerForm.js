@@ -18,7 +18,7 @@ function handleOnChange(event) {
 }
 function handleSubmit() {
     let user= { ...state,id:props.user.id };
-    props.editUser(props.user.id,user);
+    props.editTracker(props.user.id,user);
     props.hideModal();
     console.log(user)
 }
@@ -32,16 +32,16 @@ function handleSubmit() {
                    </div><br></br>
 
                    <div>
-                       <label className="head">Date</label>
+                       <label className="head">Date</label><br></br>
                        <input type="date" name="date" value={state.date} onChange={handleOnChange} />
                    </div><br></br>
 
                    <div>
-                       <label className="head">Amount</label>
+                       <label className="head">Amount</label><br></br>
                        <input type="text" name="amount" value={state.amount}  onChange={handleOnChange} />
                    </div><br></br>
                    <div>
-                       <label className="head">Category</label>
+                       <label className="head">Category</label><br></br>
                        <select name="category" id="cat" value= {state.category}>
                               <option selected>Open this select menu</option>
                                  <option value="Accomodation">Accomodation</option>
