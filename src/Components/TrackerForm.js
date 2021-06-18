@@ -46,7 +46,7 @@ import addUser from '../actions/trackerActions';
                    <div>
                        <div>
                        <label className="head">Category</label><br></br>
-                       <select name="category" id="cat" value= {state.category}>
+                       <select name="category" id="cat" value= {state.category} onChange={handleOnChange}>
                               <option selected>Open this select menu</option>
                                  <option value="Accomodation">Accomodation</option>
                                  <  option value="Housing">Housing</option>
